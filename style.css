@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+}
+*{
+    scroll-behavior: smooth;
+}
+nav{
+    /*border: 2px solid green;*/
+   /* padding: 3vmax;*//*3% of max of view port length considering out of both the vh and vw*/
+   height: 4vmax;
+    display: flex;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.452) ;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 10000;/*taki sabse uper navbar dikhe isliye navbar ka z-index badha diya hai kyonki left wali photo navbar ke upar chali za rahi thi scroll karte waqt */
+
+}
+.left{
+    /*border: 2px solid salmon;*/
+    width: 20%;/* i.e. wdth is 20% of parent element that is the nav*/
+    display: flex;
+    justify-content: center;/*along x-axis or the main axis*/
+    align-items: center;/*along y axis or cross axis      center vertically*/
+}
+.left>a{
+    color:crimson;
+    text-decoration: none;
+    font-size: 2vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*border: 1px solid yellowgreen;*/
+
+}
+.mid{
+   /* border: 2px solid rgb(56, 56, 119);*/
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: stretch;
+}
+.mid>a{
+    text-decoration: none;/* niche se highlighted line hatane ke liye*/
+    color: black;
+    font-size: 1.4vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*border: 1px solid greenyellow;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mid>a:hover{
+    border-bottom: 2px solid crimson;
+    color: crimson;
+}
+.right{
+    /*border: 2px solid rgba(221, 221, 83, 0.848);*/
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.right>img{
+    width: 2.5vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+/*---------------------------------*/
+.home{
+   /* border: 2px solid red;*/
+    height: 90vh;
+    background-image:radial-gradient(rgb(251, 243, 243),rgb(174, 174, 224));
+    display: flex;
+}
+.container{
+    width: 100%;
+    height: 100%;
+   /* border: 1px solid yellow;*/
+}
+#rightContainer{
+    display: flex;
+    justify-content: flex-end;
+
+}
+#rightContainer>img{
+    margin-right: 7vmax;
+/*shadow around image*/
+filter: drop-shadow(0 0 20px black);
+
+}
+#leftContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 3vmax;
+    box-sizing: border-box;
+    justify-content: center;
+   /* border: 1px solid red;*/
+}
+#leftContainer>h1{
+      font-size: 5vmax;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      /*border: 1px solid red;*/
+}
+#leftContainer>h2{
+    font-size: 2vmax;
+    font-family: sans-serif;
+    /*border: 1px solid red;*/
+    margin-top: -8%;
+}
+#leftContainer>p{
+    font-size: 1.2vmax;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*border: 1px solid red;*/
+    margin-left: 2%;
+    
+}
+#leftContainer>button{
+    width: 11vmax;
+    padding: 0.6vmax;
+    border: none;
+    border-radius: 2vmax;
+    background-color: crimson;
+    color: rgb(210, 195, 195);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    margin-left: 2%;
+}
+#leftContainer>button:hover{
+    background-color:rgb(183, 11, 45) ;
+}
+/*----------------------------------------------------------------------designing the products section*/
+
+/*#products{
+    height: 200vh;
+    border: 2px solid red;
+}*/
+#products>h1{
+    font-size: 2.5vmax;
+    margin: 5vmax auto;
+    border-bottom: 0.4vmax solid crimson;
+    padding: 1vmax;
+    text-align: center;
+    width: 25vmax;/*here it is the width of the h1 tag*/
+}
+.productsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*background-color: aquamarine;*/
+    height: 100%;
+    max-width: 80vw;
+    margin: auto;
+   /* border: 2px solid blueviolet;*/
+}
+/*-------------------------product-*/
+.product{
+    /*border: 2px solid blue;*/
+    transition: all 0.3s;
+    cursor: pointer;
+   /* width: 22vmax;*/
+    height: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+
+}
+.product>img{
+   
+    width: 20vmax;
+}
+.product>h4{
+    margin: 2%;
+}
+.product>h5{
+    margin: 0;
+}
+.product:hover{
+    transform: translateY(-10px);
+}
+/*--------------------------------------------footer*/
+footer{
+    margin-top: 10vmax;
+    /*height: 10vmax;*/
+    padding: 2vmax;
+    background-color: rgb(43, 40, 40);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftFooter{
+    width: 20%;
+    /*border: 2px solid green;*/
+    height: 20vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.leftFooter>p{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.leftFooter>img{
+    width: 8vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+.leftFooter>h4{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.rightFooter{
+    width: 20%;
+   /* border: 2px solid palevioletred;*/
+   height: 20vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rightFooter>h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2vmax;
+    text-decoration: underline;
+
+}
+.rightFooter>a{
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2vmax;
+    color: white;
+    margin: 0.6vmax;
+}
+.midFooter{
+    width: 60%;
+    height: 20vmax;
+    /*border: 2px solid yellow;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.midFooter>img{
+    width: 25vmax;
+}
